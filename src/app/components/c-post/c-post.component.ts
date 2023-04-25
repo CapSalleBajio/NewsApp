@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IArticle } from 'src/app/interfaces/article.interface';
 
 @Component({
   selector: 'app-c-post',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./c-post.component.scss']
 })
 export class CPostComponent {
+
+  @Input() article?: IArticle;
 
 }

@@ -1,1 +1,9 @@
-<p>c-sidebar-news-item works!</p>
+<a>
+  <img [src]="article?.imageUrl" [alt]="article?.title">
+  <div>
+    <h3>
+      {{ article?.title }}
+    </h3>
+    <p> {{ article?.summary?.substring(0, 40) }}... </p>
+  </div>
+</a>

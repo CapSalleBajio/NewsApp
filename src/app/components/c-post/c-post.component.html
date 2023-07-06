@@ -8,7 +8,7 @@
     <p class="post-description">
       {{ article?.summary }}
     </p>
-    <a class="post-read-more">Leer más</a>
+    <a [routerLink]="['/news', article?.id]" class="post-read-more">Leer más</a>
   </div> <!-- post content -->
 </div>
 

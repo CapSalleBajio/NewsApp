@@ -17,7 +17,7 @@ export class NewsService {
   }
 
   getArticleById(id: string): Promise<IArticle> {
-    return fetch(`${this.urlApi}/articles/${id}}`)
+    return fetch(`${this.urlApi}/articles/${id}`)
     .then(response => response.json());
   }
 

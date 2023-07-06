@@ -4,6 +4,7 @@ import { CHeaderComponent } from './c-header/c-header.component';
 import { CPostComponent } from './c-post/c-post.component';
 import { CSidebarComponent } from './c-sidebar/c-sidebar.component';
 import { CSidebarNewsItemComponent } from './c-sidebar-news-item/c-sidebar-news-item.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import { CSidebarNewsItemComponent } from './c-sidebar-news-item/c-sidebar-news-
     CSidebarNewsItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     CHeaderComponent,
